@@ -1,0 +1,24 @@
+# Generated files
+*.g.dart
+*.freezed.dart
+*.config.dart
+
+# Build
+build/
+.dart_tool/
+
+# Dependencies
+.packages
+pubspec.lock
+
+# Platform specific
+android/
+ios/
+macos/
+windows/
+linux/
+web/
+
+# Tests
+test/
+
