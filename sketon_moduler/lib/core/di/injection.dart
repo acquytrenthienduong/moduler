@@ -7,7 +7,6 @@ import '../network/interceptors/auth_interceptor.dart';
 import '../network/interceptors/refresh_token_interceptor.dart';
 import '../network/interceptors/retry_interceptor.dart';
 import '../network/interceptors/logging_interceptor.dart';
-import '../models/user.dart';
 
 final getIt = GetIt.instance;
 
@@ -51,21 +50,5 @@ abstract class RegisterModule {
     ]);
     
     return client;
-  }
-  
-  /// Đăng ký User model factory
-  @factoryMethod
-  User createUser({
-    required String id,
-    required String email,
-    required String name,
-    String? avatar,
-  }) {
-    return User(
-      id: id,
-      email: email,
-      name: name,
-      avatar: avatar,
-    );
   }
 }

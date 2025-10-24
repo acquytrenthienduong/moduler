@@ -88,6 +88,20 @@ lib/
 
 ## 🎯 Tạo Module Mới
 
+### ⚡ Cách 1: Script Generator (Recommended)
+
+```bash
+./scripts/create_module.sh module_name
+```
+
+**Tự động tạo đầy đủ:** Model, Repository, Provider, Page, Barrel Export
+
+Xem chi tiết: `scripts/README.md`
+
+---
+
+### 📝 Cách 2: Manual (Step by Step)
+
 ### Bước 1: Tạo Model (Freezed 3.x)
 
 ```dart
@@ -455,9 +469,11 @@ Gặp vấn đề? Check:
 1. **PROJECT_TEMPLATE.md** - Hướng dẫn setup project mới
 2. **DIO_GUIDE.md** ⭐ - Dio API client guide (upload, download, errors)
 3. **INTERCEPTORS_GUIDE.md** ⭐ - Interceptors chi tiết (Auth, RefreshToken, Retry, Logging)
-4. **FREEZED_3_SYNTAX.md** - Freezed syntax reference
-5. **BARREL_EXPORTS.md** - Import patterns reference
-6. Run `fvm flutter pub run build_runner build --delete-conflicting-outputs`
+4. **lib/core/di/INJECTION_GUIDE.md** ⭐ - Khi nào cần sửa injection.dart?
+5. **FREEZED_3_SYNTAX.md** - Freezed syntax reference
+6. **BARREL_EXPORTS.md** - Import patterns reference
+7. **scripts/NAMING_GUIDE.md** - Module naming conventions
+8. Run `fvm flutter pub run build_runner build --delete-conflicting-outputs`
 
 ---
 
