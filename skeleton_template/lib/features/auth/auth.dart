@@ -1,6 +1,9 @@
 // Auth Module Barrel Export
 
-// Data Layer
+// Data Layer - Models
+export 'data/models/user.dart';
+
+// Data Layer - Repositories
 export 'data/repositories/auth_repository.dart';
 
 // Presentation Layer - Providers

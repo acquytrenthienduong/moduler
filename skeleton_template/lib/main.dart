@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'core/core.dart';
+import 'package:core/core.dart';
+import 'app/router/app_router.dart';
+import 'app/di/injection.dart' as app_di;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Khởi tạo GetIt dependencies
-  await configureDependencies();
+  // Khởi tạo GetIt dependencies (core + app)
+  await app_di.configureDependencies();
 
   runApp(const MyApp());
 }

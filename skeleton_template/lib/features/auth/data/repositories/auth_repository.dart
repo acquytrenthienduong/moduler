@@ -1,9 +1,9 @@
-import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../core/network/api_client.dart';
-import '../../../../core/models/user.dart';
+import 'package:core/core.dart';
+import '../models/user.dart';
 
-@singleton
+// Note: Không dùng @singleton vì dependencies (ApiClient, SharedPreferences)
+// đến từ core package. Sẽ được register manually trong injection.dart
 class AuthRepository {
   // final ApiClient _apiClient; // Reserved for future API calls
   final SharedPreferences _prefs;
